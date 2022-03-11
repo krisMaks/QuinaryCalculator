@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225C1DD0D0B8D430FA4B55C1 /* Pods_CulinaryCalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8F75F8EE480EE8616C9119 /* Pods_CulinaryCalculator.framework */; };
+		AF4FEEFF27CF840200D0DC38 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEEFE27CF840200D0DC38 /* TabBarController.swift */; };
+		AF4FEF0127CF86D900D0DC38 /* RecipesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF0027CF86D900D0DC38 /* RecipesController.swift */; };
+		AF4FEF0327CF871D00D0DC38 /* RecipesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF0227CF871D00D0DC38 /* RecipesView.swift */; };
+		AF4FEF0527CF911400D0DC38 /* RecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF0427CF911400D0DC38 /* RecipesCell.swift */; };
+		AF4FEF0727CF956600D0DC38 /* FontsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF0627CF956600D0DC38 /* FontsLibrary.swift */; };
+		AF4FEF0927CF997E00D0DC38 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF0827CF997E00D0DC38 /* Recipe.swift */; };
+		AF4FEF1327D1188700D0DC38 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1227D1188700D0DC38 /* Category.swift */; };
+		AF4FEF1527D11A0000D0DC38 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1427D11A0000D0DC38 /* PlusButton.swift */; };
+		AF4FEF1727D11EAD00D0DC38 /* NewRecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1627D11EAD00D0DC38 /* NewRecipeController.swift */; };
+		AF4FEF1927D11EC000D0DC38 /* NewRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1827D11EC000D0DC38 /* NewRecipeView.swift */; };
+		AF4FEF1B27D125F100D0DC38 /* ColorsLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1A27D125F100D0DC38 /* ColorsLibrary.swift */; };
+		AF4FEF1D27D131AA00D0DC38 /* RecipeDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1C27D131AA00D0DC38 /* RecipeDetailController.swift */; };
+		AF4FEF1F27D131BE00D0DC38 /* RecipeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4FEF1E27D131BE00D0DC38 /* RecipeDetailView.swift */; };
+		AFD28F9827C7BD8900F96AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28F9727C7BD8900F96AD0 /* AppDelegate.swift */; };
+		AFD28F9A27C7BD8900F96AD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28F9927C7BD8900F96AD0 /* SceneDelegate.swift */; };
+		AFD28F9C27C7BD8900F96AD0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28F9B27C7BD8900F96AD0 /* MainViewController.swift */; };
+		AFD28FA127C7BD8E00F96AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFD28FA027C7BD8E00F96AD0 /* Assets.xcassets */; };
+		AFD28FA427C7BD8E00F96AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD28FA227C7BD8E00F96AD0 /* LaunchScreen.storyboard */; };
+		AFD28FAC27C7BFAA00F96AD0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FAB27C7BFAA00F96AD0 /* MainView.swift */; };
+		AFD28FB027C7C14C00F96AD0 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FAF27C7C14C00F96AD0 /* TextField.swift */; };
+		AFD28FB227C7C2D400F96AD0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FB127C7C2D400F96AD0 /* Label.swift */; };
+		AFD28FB427C7C3CB00F96AD0 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FB327C7C3CB00F96AD0 /* Button.swift */; };
+		AFD28FB727C7CA7100F96AD0 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FB627C7CA7100F96AD0 /* StackView.swift */; };
+		AFD28FB927C7D94B00F96AD0 /* Measure.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FB827C7D94B00F96AD0 /* Measure.swift */; };
+		AFD28FBB27C7DA6800F96AD0 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FBA27C7DA6800F96AD0 /* Ingredient.swift */; };
+		AFD28FC627C9035400F96AD0 /* PositionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FC527C9035400F96AD0 /* PositionCell.swift */; };
+		AFD28FC827C9064600F96AD0 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FC727C9064600F96AD0 /* Position.swift */; };
+		AFD28FCA27C90FC300F96AD0 /* AddMeasureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FC927C90FC300F96AD0 /* AddMeasureView.swift */; };
+		AFD28FCC27C90FD800F96AD0 /* AddIngredientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FCB27C90FD800F96AD0 /* AddIngredientView.swift */; };
+		AFD28FCE27C9103D00F96AD0 /* AddMeasureController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FCD27C9103D00F96AD0 /* AddMeasureController.swift */; };
+		AFD28FD027C92BD400F96AD0 /* AddIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FCF27C92BD400F96AD0 /* AddIngredientController.swift */; };
+		AFD28FD227C932F800F96AD0 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD28FD127C932F800F96AD0 /* DatabaseService.swift */; };
+		AFD81CE927DA52C000682D74 /* DeleteButtonInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD81CE827DA52C000682D74 /* DeleteButtonInCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		272AA15F5FEC012B26F4BD0A /* Pods-CulinaryCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CulinaryCalculator.debug.xcconfig"; path = "Target Support Files/Pods-CulinaryCalculator/Pods-CulinaryCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		AA8F75F8EE480EE8616C9119 /* Pods_CulinaryCalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CulinaryCalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF4FEEFE27CF840200D0DC38 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		AF4FEF0027CF86D900D0DC38 /* RecipesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesController.swift; sourceTree = "<group>"; };
+		AF4FEF0227CF871D00D0DC38 /* RecipesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesView.swift; sourceTree = "<group>"; };
+		AF4FEF0427CF911400D0DC38 /* RecipesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesCell.swift; sourceTree = "<group>"; };
+		AF4FEF0627CF956600D0DC38 /* FontsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsLibrary.swift; sourceTree = "<group>"; };
+		AF4FEF0827CF997E00D0DC38 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		AF4FEF1227D1188700D0DC38 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		AF4FEF1427D11A0000D0DC38 /* PlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		AF4FEF1627D11EAD00D0DC38 /* NewRecipeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeController.swift; sourceTree = "<group>"; };
+		AF4FEF1827D11EC000D0DC38 /* NewRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipeView.swift; sourceTree = "<group>"; };
+		AF4FEF1A27D125F100D0DC38 /* ColorsLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsLibrary.swift; sourceTree = "<group>"; };
+		AF4FEF1C27D131AA00D0DC38 /* RecipeDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RecipeDetailController.swift; path = CulinaryCalculator/Views/RecipeDetailController.swift; sourceTree = SOURCE_ROOT; };
+		AF4FEF1E27D131BE00D0DC38 /* RecipeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailView.swift; sourceTree = "<group>"; };
+		AFD28F9427C7BD8900F96AD0 /* CulinaryCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CulinaryCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD28F9727C7BD8900F96AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AFD28F9927C7BD8900F96AD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AFD28F9B27C7BD8900F96AD0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AFD28FA027C7BD8E00F96AD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFD28FA327C7BD8E00F96AD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AFD28FA527C7BD8E00F96AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFD28FAB27C7BFAA00F96AD0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AFD28FAF27C7C14C00F96AD0 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		AFD28FB127C7C2D400F96AD0 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		AFD28FB327C7C3CB00F96AD0 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		AFD28FB627C7CA7100F96AD0 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		AFD28FB827C7D94B00F96AD0 /* Measure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Measure.swift; sourceTree = "<group>"; };
+		AFD28FBA27C7DA6800F96AD0 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		AFD28FC527C9035400F96AD0 /* PositionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionCell.swift; sourceTree = "<group>"; };
+		AFD28FC727C9064600F96AD0 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		AFD28FC927C90FC300F96AD0 /* AddMeasureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasureView.swift; sourceTree = "<group>"; };
+		AFD28FCB27C90FD800F96AD0 /* AddIngredientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientView.swift; sourceTree = "<group>"; };
+		AFD28FCD27C9103D00F96AD0 /* AddMeasureController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeasureController.swift; sourceTree = "<group>"; };
+		AFD28FCF27C92BD400F96AD0 /* AddIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientController.swift; sourceTree = "<group>"; };
+		AFD28FD127C932F800F96AD0 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		AFD81CE827DA52C000682D74 /* DeleteButtonInCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButtonInCell.swift; sourceTree = "<group>"; };
+		FB9303FB1F5FD826338D9B53 /* Pods-CulinaryCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CulinaryCalculator.release.xcconfig"; path = "Target Support Files/Pods-CulinaryCalculator/Pods-CulinaryCalculator.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AFD28F9127C7BD8900F96AD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225C1DD0D0B8D430FA4B55C1 /* Pods_CulinaryCalculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5808A9E664E6A36F4E42789C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA8F75F8EE480EE8616C9119 /* Pods_CulinaryCalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF4FEEFD27CF83B100D0DC38 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28F9727C7BD8900F96AD0 /* AppDelegate.swift */,
+				AFD28FA227C7BD8E00F96AD0 /* LaunchScreen.storyboard */,
+				AFD28F9927C7BD8900F96AD0 /* SceneDelegate.swift */,
+				AFD28FA027C7BD8E00F96AD0 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AFD28F8B27C7BD8900F96AD0 = {
+			isa = PBXGroup;
+			children = (
+				AFD28F9627C7BD8900F96AD0 /* CulinaryCalculator */,
+				AFD28F9527C7BD8900F96AD0 /* Products */,
+				CDED12F8C5AB68294E94AC01 /* Pods */,
+				5808A9E664E6A36F4E42789C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AFD28F9527C7BD8900F96AD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28F9427C7BD8900F96AD0 /* CulinaryCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AFD28F9627C7BD8900F96AD0 /* CulinaryCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28FA527C7BD8E00F96AD0 /* Info.plist */,
+				AFD28FD127C932F800F96AD0 /* DatabaseService.swift */,
+				AF4FEEFD27CF83B100D0DC38 /* App */,
+				AFD28FB527C7CA2F00F96AD0 /* UIKitExtensions */,
+				AFD28FBC27C7DA9800F96AD0 /* Models */,
+				AFD28FAE27C7C11F00F96AD0 /* Views */,
+				AFD28FAD27C7C11500F96AD0 /* Controllers */,
+			);
+			path = CulinaryCalculator;
+			sourceTree = "<group>";
+		};
+		AFD28FAD27C7C11500F96AD0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AF4FEF1C27D131AA00D0DC38 /* RecipeDetailController.swift */,
+				AFD28F9B27C7BD8900F96AD0 /* MainViewController.swift */,
+				AFD28FCD27C9103D00F96AD0 /* AddMeasureController.swift */,
+				AFD28FCF27C92BD400F96AD0 /* AddIngredientController.swift */,
+				AF4FEEFE27CF840200D0DC38 /* TabBarController.swift */,
+				AF4FEF0027CF86D900D0DC38 /* RecipesController.swift */,
+				AF4FEF1627D11EAD00D0DC38 /* NewRecipeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AFD28FAE27C7C11F00F96AD0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28FC427C9032E00F96AD0 /* Components */,
+				AFD28FAB27C7BFAA00F96AD0 /* MainView.swift */,
+				AFD28FC927C90FC300F96AD0 /* AddMeasureView.swift */,
+				AFD28FCB27C90FD800F96AD0 /* AddIngredientView.swift */,
+				AF4FEF0227CF871D00D0DC38 /* RecipesView.swift */,
+				AF4FEF1827D11EC000D0DC38 /* NewRecipeView.swift */,
+				AF4FEF1E27D131BE00D0DC38 /* RecipeDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AFD28FB527C7CA2F00F96AD0 /* UIKitExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28FB127C7C2D400F96AD0 /* Label.swift */,
+				AFD28FB327C7C3CB00F96AD0 /* Button.swift */,
+				AFD28FAF27C7C14C00F96AD0 /* TextField.swift */,
+				AFD28FB627C7CA7100F96AD0 /* StackView.swift */,
+				AF4FEF0627CF956600D0DC38 /* FontsLibrary.swift */,
+				AF4FEF1A27D125F100D0DC38 /* ColorsLibrary.swift */,
+			);
+			path = UIKitExtensions;
+			sourceTree = "<group>";
+		};
+		AFD28FBC27C7DA9800F96AD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28FB827C7D94B00F96AD0 /* Measure.swift */,
+				AFD28FBA27C7DA6800F96AD0 /* Ingredient.swift */,
+				AFD28FC727C9064600F96AD0 /* Position.swift */,
+				AF4FEF0827CF997E00D0DC38 /* Recipe.swift */,
+				AF4FEF1227D1188700D0DC38 /* Category.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AFD28FC427C9032E00F96AD0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				AFD28FC527C9035400F96AD0 /* PositionCell.swift */,
+				AF4FEF0427CF911400D0DC38 /* RecipesCell.swift */,
+				AF4FEF1427D11A0000D0DC38 /* PlusButton.swift */,
+				AFD81CE827DA52C000682D74 /* DeleteButtonInCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CDED12F8C5AB68294E94AC01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				272AA15F5FEC012B26F4BD0A /* Pods-CulinaryCalculator.debug.xcconfig */,
+				FB9303FB1F5FD826338D9B53 /* Pods-CulinaryCalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AFD28F9327C7BD8900F96AD0 /* CulinaryCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFD28FA827C7BD8E00F96AD0 /* Build configuration list for PBXNativeTarget "CulinaryCalculator" */;
+			buildPhases = (
+				87D52D6C528F2E6916D2D9E2 /* [CP] Check Pods Manifest.lock */,
+				AFD28F9027C7BD8900F96AD0 /* Sources */,
+				AFD28F9127C7BD8900F96AD0 /* Frameworks */,
+				AFD28F9227C7BD8900F96AD0 /* Resources */,
+				62348F5CBF46E2AED9C667B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CulinaryCalculator;
+			productName = CulinaryCalculator;
+			productReference = AFD28F9427C7BD8900F96AD0 /* CulinaryCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AFD28F8C27C7BD8900F96AD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					AFD28F9327C7BD8900F96AD0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = AFD28F8F27C7BD8900F96AD0 /* Build configuration list for PBXProject "CulinaryCalculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AFD28F8B27C7BD8900F96AD0;
+			productRefGroup = AFD28F9527C7BD8900F96AD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AFD28F9327C7BD8900F96AD0 /* CulinaryCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AFD28F9227C7BD8900F96AD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD28FA427C7BD8E00F96AD0 /* LaunchScreen.storyboard in Resources */,
+				AFD28FA127C7BD8E00F96AD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62348F5CBF46E2AED9C667B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CulinaryCalculator/Pods-CulinaryCalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CulinaryCalculator/Pods-CulinaryCalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CulinaryCalculator/Pods-CulinaryCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87D52D6C528F2E6916D2D9E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CulinaryCalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFD28F9027C7BD8900F96AD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFD28FD227C932F800F96AD0 /* DatabaseService.swift in Sources */,
+				AFD81CE927DA52C000682D74 /* DeleteButtonInCell.swift in Sources */,
+				AF4FEF1F27D131BE00D0DC38 /* RecipeDetailView.swift in Sources */,
+				AFD28FB427C7C3CB00F96AD0 /* Button.swift in Sources */,
+				AF4FEF0327CF871D00D0DC38 /* RecipesView.swift in Sources */,
+				AFD28FCC27C90FD800F96AD0 /* AddIngredientView.swift in Sources */,
+				AF4FEEFF27CF840200D0DC38 /* TabBarController.swift in Sources */,
+				AF4FEF1B27D125F100D0DC38 /* ColorsLibrary.swift in Sources */,
+				AF4FEF0527CF911400D0DC38 /* RecipesCell.swift in Sources */,
+				AFD28F9C27C7BD8900F96AD0 /* MainViewController.swift in Sources */,
+				AFD28FC827C9064600F96AD0 /* Position.swift in Sources */,
+				AF4FEF0127CF86D900D0DC38 /* RecipesController.swift in Sources */,
+				AFD28FBB27C7DA6800F96AD0 /* Ingredient.swift in Sources */,
+				AF4FEF0927CF997E00D0DC38 /* Recipe.swift in Sources */,
+				AFD28FB927C7D94B00F96AD0 /* Measure.swift in Sources */,
+				AF4FEF1727D11EAD00D0DC38 /* NewRecipeController.swift in Sources */,
+				AFD28FAC27C7BFAA00F96AD0 /* MainView.swift in Sources */,
+				AF4FEF1527D11A0000D0DC38 /* PlusButton.swift in Sources */,
+				AF4FEF1927D11EC000D0DC38 /* NewRecipeView.swift in Sources */,
+				AFD28FB727C7CA7100F96AD0 /* StackView.swift in Sources */,
+				AFD28FB227C7C2D400F96AD0 /* Label.swift in Sources */,
+				AF4FEF0727CF956600D0DC38 /* FontsLibrary.swift in Sources */,
+				AFD28FCE27C9103D00F96AD0 /* AddMeasureController.swift in Sources */,
+				AFD28F9827C7BD8900F96AD0 /* AppDelegate.swift in Sources */,
+				AFD28FB027C7C14C00F96AD0 /* TextField.swift in Sources */,
+				AF4FEF1D27D131AA00D0DC38 /* RecipeDetailController.swift in Sources */,
+				AFD28F9A27C7BD8900F96AD0 /* SceneDelegate.swift in Sources */,
+				AFD28FC627C9035400F96AD0 /* PositionCell.swift in Sources */,
+				AFD28FD027C92BD400F96AD0 /* AddIngredientController.swift in Sources */,
+				AFD28FCA27C90FC300F96AD0 /* AddMeasureView.swift in Sources */,
+				AF4FEF1327D1188700D0DC38 /* Category.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AFD28FA227C7BD8E00F96AD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AFD28FA327C7BD8E00F96AD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AFD28FA627C7BD8E00F96AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AFD28FA727C7BD8E00F96AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AFD28FA927C7BD8E00F96AD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 272AA15F5FEC012B26F4BD0A /* Pods-CulinaryCalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7593XP8TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CulinaryCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kristen.CulinaryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		AFD28FAA27C7BD8E00F96AD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB9303FB1F5FD826338D9B53 /* Pods-CulinaryCalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7593XP8TX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CulinaryCalculator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Kristen.CulinaryCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AFD28F8F27C7BD8900F96AD0 /* Build configuration list for PBXProject "CulinaryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD28FA627C7BD8E00F96AD0 /* Debug */,
+				AFD28FA727C7BD8E00F96AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFD28FA827C7BD8E00F96AD0 /* Build configuration list for PBXNativeTarget "CulinaryCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AFD28FA927C7BD8E00F96AD0 /* Debug */,
+				AFD28FAA27C7BD8E00F96AD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AFD28F8C27C7BD8900F96AD0 /* Project object */;
+}
